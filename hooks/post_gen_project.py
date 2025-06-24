@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import os
 import shutil
+from subprocess import DEVNULL, call
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 
@@ -91,3 +92,8 @@ if __name__ == "__main__":
         if os.path.isdir("src"):
             remove_dir("src")
         move_dir("{{cookiecutter.project_slug}}", os.path.join("src", "{{cookiecutter.project_slug}}"))
+
+    print("Setting up git.")
+    call(["git", "init"], stderr=DEVNULL, stdout=DEVNULL)
+    call(["git", "add", "*"], stderr=DEVNULL, stdout=DEVNULL)
+    call(["git", "commit", "-m", "Initial commit"], stderr=DEVNULL, stdout=DEVNULL)

@@ -131,5 +131,4 @@ source = [
     {%- else -%}
     "{{cookiecutter.project_slug}}"
     {%- endif -%}
-]
-{% endif %}
+]{% endif %}

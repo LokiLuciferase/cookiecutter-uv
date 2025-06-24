@@ -92,8 +92,6 @@ fix = true
 select = [
     # flake8-2020
     "YTT",
-    # flake8-bandit
-    "S",
     # flake8-bugbear
     "B",
     # flake8-builtins
