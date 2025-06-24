@@ -1,3 +1,9 @@
+.PHONY: clean
+clean: ## Clean the project directory.
+	@rm -rf .cache .mypy_cache .pytest_cache .ruff_cache .coverage coverage.xml dist build
+	@find . -name '*.pyc' -delete || true
+	@find . -name '__pycache__' -delete || true
+
 .PHONY: install
 install: ## Install the virtual environment and install the pre-commit hooks
 	@echo "🚀 Creating virtual environment using uv"

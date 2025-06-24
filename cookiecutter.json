@@ -9,34 +9,13 @@
     "src",
     "flat"
   ],
-  "include_github_actions": [
-    "y",
-    "n"
-  ],
-  "publish_to_pypi": [
-    "y",
-    "n"
-  ],
-  "deptry": [
-    "y",
-    "n"
-  ],
-  "mkdocs": [
-    "y",
-    "n"
-  ],
-  "codecov": [
-    "y",
-    "n"
-  ],
-  "dockerfile": [
-    "y",
-    "n"
-  ],
-  "devcontainer": [
-    "n",
-    "y"
-  ],
+  "include_github_actions": "y",
+  "publish_to_pypi": "y",
+  "deptry": "y",
+  "mkdocs": "y",
+  "codecov": "y",
+  "dockerfile": "y",
+  "devcontainer": "n",
   "open_source_license": [
     "MIT license",
     "BSD license",

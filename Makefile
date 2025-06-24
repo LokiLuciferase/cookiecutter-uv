@@ -1,3 +1,9 @@
+.PHONY: clean
+clean: ## Clean the project directory.
+	@rm -rf .cache .mypy_cache .pytest_cache .ruff_cache .coverage coverage.xml dist build
+	@find . -name '*.pyc' -delete || true
+	@find . -name '__pycache__' -delete || true
+
 .PHONY: bake
 bake: ## bake without inputs and overwrite if exists.
 	@uv run cookiecutter --no-input . --overwrite-if-exists
