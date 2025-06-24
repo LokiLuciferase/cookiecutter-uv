@@ -1,13 +1,13 @@
 {
-  "author": "Florian Maas",
-  "email": "fpgmaas@gmail.com",
-  "author_github_handle": "fpgmaas",
+  "author": "Lukas Lüftinger",
+  "email": "lukas.lueftinger@outlook.com",
+  "author_github_handle": "LokiLuciferase",
   "project_name": "example-project",
   "project_slug": "{{cookiecutter.project_name|lower|replace('-', '_')}}",
   "project_description": "This is a template repository for Python projects that use uv for their dependency management.",
   "layout": [
-    "flat",
-    "src"
+    "src",
+    "flat"
   ],
   "include_github_actions": [
     "y",
@@ -34,8 +34,8 @@
     "n"
   ],
   "devcontainer": [
-    "y",
-    "n"
+    "n",
+    "y"
   ],
   "open_source_license": [
     "MIT license",

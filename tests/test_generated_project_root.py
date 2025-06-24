@@ -13,7 +13,6 @@ def test_full_structure(cookies, tmp_path):
     """
 
     expected_files = [
-        ".devcontainer",
         ".github",
         ".gitignore",
         ".pre-commit-config.yaml",
@@ -24,7 +23,7 @@ def test_full_structure(cookies, tmp_path):
         "README.md",
         "codecov.yaml",
         "docs",
-        "example_project",
+        "src/example_project",
         "mkdocs.yml",
         "pyproject.toml",
         "tests",
@@ -33,6 +32,8 @@ def test_full_structure(cookies, tmp_path):
 
     with run_within_dir(tmp_path):
         result = cookies.bake()
+        # import time
+        # time.sleep(1000)
 
         # Check that all expected files and folders are present
         for file in expected_files:

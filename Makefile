@@ -14,8 +14,8 @@ bake-with-inputs: ## bake with inputs and overwrite if exists.
 bake-and-test-deploy: ## For quick publishing to cookiecutter-uv-example to test GH Actions
 	@rm -rf cookiecutter-uv-example || true
 	@uv run cookiecutter --no-input . --overwrite-if-exists \
-		author="Florian Maas" \
-		email="fpgmaas@gmail.com" \
+		author="Lukas Lüftinger" \
+		email="lukas.lueftinger@outlook.com" \
 		github_author_handle=fpgmaas \
 		project_name=cookiecutter-uv-example \
 		project_slug=cookiecutter_uv_example
